@@ -1,0 +1,131 @@
+
+1. ls
+
+Desktop    Downloads         Music     praxis  Templates
+Documents  examples.desktop  Pictures  Public  Videos
+
+2. ls -R
+
+.:
+Desktop    Downloads         Music     praxis  Templates
+Documents  examples.desktop  Pictures  Public  Videos
+
+./Desktop:
+
+./Documents:
+
+./Downloads:
+
+./Music:
+
+./Pictures:
+
+./praxis:
+kemampuan-dasar-1
+
+./praxis/kemampuan-dasar-1:
+latihan
+
+./praxis/kemampuan-dasar-1/latihan:
+env.txt  grub.txt  kernel-linux.txt
+
+./Public:
+
+./Templates:
+
+./Videos:
+
+
+3. ls -al
+
+total 112
+drwxr-xr-x 20 abror abror 4096 Sep  1 14:06 .
+drwxr-xr-x  4 root  root  4096 Sep  1 03:09 ..
+-rw-------  1 abror abror  223 Sep  1 14:12 .bash_history
+-rw-r--r--  1 abror abror  220 Sep  1 03:09 .bash_logout
+-rw-r--r--  1 abror abror 3771 Sep  1 03:09 .bashrc
+drwx------ 16 abror abror 4096 Sep  1 14:06 .cache
+drwx------ 13 abror abror 4096 Sep  1 06:31 .config
+drwx------  3 root  root  4096 Sep  1 06:06 .dbus
+drwxr-xr-x  2 abror abror 4096 Sep  1 10:20 Desktop
+drwxr-xr-x  2 abror abror 4096 Sep  1 10:20 Documents
+drwxr-xr-x  2 abror abror 4096 Sep  1 10:20 Downloads
+-rw-r--r--  1 abror abror 8980 Sep  1 03:09 examples.desktop
+drwx------  3 abror abror 4096 Sep  1 13:54 .gnupg
+drwxr--r--  2 abror abror 4096 Sep  1 13:58 .hardinfo
+-rw-------  1 abror abror 2070 Sep  1 12:23 .ICEauthority
+drwx------  3 abror abror 4096 Sep  1 10:20 .local
+drwx------  5 abror abror 4096 Sep  1 03:49 .mozilla
+drwxr-xr-x  2 abror abror 4096 Sep  1 10:20 Music
+drwxr-xr-x  2 abror abror 4096 Sep  1 10:20 Pictures
+drwxr-xr-x  3 abror abror 4096 Sep  1 06:13 praxis
+-rw-r--r--  1 abror abror  807 Sep  1 03:09 .profile
+drwxr-xr-x  2 abror abror 4096 Sep  1 10:20 Public
+drwx------  2 abror abror 4096 Sep  1 13:54 .ssh
+-rw-r--r--  1 abror abror    0 Sep  1 06:06 .sudo_as_admin_successful
+drwxr-xr-x  2 abror abror 4096 Sep  1 10:20 Templates
+drwx------  5 abror abror 4096 Sep  1 14:06 .thunderbird
+drwxr-xr-x  2 abror abror 4096 Sep  1 10:20 Videos
+
+4. ls -a
+
+.              .dbus             .ICEauthority  Public
+..             Desktop           .local         .ssh
+.bash_history  Documents         .mozilla       .sudo_as_admin_successful
+.bash_logout   Downloads         Music          Templates
+.bashrc        examples.desktop  Pictures       .thunderbird
+.cache         .gnupg            praxis         Videos
+.config        .hardinfo         .profile
+
+5. cat > contoh1
+
+coba coba
+
+6. cat > contoh2
+
+lagi lagi
+
+7. cat contoh1 contoh2 > contoh
+
+8. cat contoh
+
+coba coba 
+lagi lagi
+
+9.rm filename
+
+abror@abror-Lenovo-ideapad-310-14IKB:~$ ls
+contoh   contoh2  Documents  examples.desktop  Pictures  Public     Videos
+contoh1  Desktop  Downloads  Music             praxis    Templates
+
+abror@abror-Lenovo-ideapad-310-14IKB:~$ rm contoh1
+
+abror@abror-Lenovo-ideapad-310-14IKB:~$ ls
+contoh   Desktop    Downloads         Music     praxis  Templates
+contoh2  Documents  examples.desktop  Pictures  Public  Videos
+
+10. mv filename new_file_location 
+
+abror@abror-Lenovo-ideapad-310-14IKB:~$ ls
+contoh   Desktop    Downloads         Music     praxis  Templates
+contoh2  Documents  examples.desktop  Pictures  Public  Videos
+
+abror@abror-Lenovo-ideapad-310-14IKB:~$ sudo mv contoh2 /home/abror/Documents
+[sudo] password for abror: 
+
+abror@abror-Lenovo-ideapad-310-14IKB:~$ ls
+contoh   Documents  examples.desktop  Pictures  Public     Videos
+Desktop  Downloads  Music             praxis    Templates
+
+11. mv filename newfilename
+
+abror@abror-Lenovo-ideapad-310-14IKB:~$ ls
+contoh   Documents  examples.desktop  Pictures  Public     Videos
+Desktop  Downloads  Music             praxis    Templates
+
+abror@abror-Lenovo-ideapad-310-14IKB:~$ mv contoh contohlagi
+
+abror@abror-Lenovo-ideapad-310-14IKB:~$ ls
+contohlagi  Documents  examples.desktop  Pictures  Public     Videos
+Desktop     Downloads  Music             praxis    Templates
+
