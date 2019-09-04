@@ -7,4 +7,4 @@ Thamas = 68;
 avg = ((David + Vinoth + Divya + Ishitha + Thamas) / 5);
 console.log("Average marks " + avg);
 
-if 
+// if

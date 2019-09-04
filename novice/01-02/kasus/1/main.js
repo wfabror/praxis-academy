@@ -12,3 +12,4 @@ function perbandingan() {
         console.log("Angkanya sama");
     }
 }
+//
