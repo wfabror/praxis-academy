@@ -33,3 +33,4 @@ getPost() // #1.fetch post
         })
     )
     .catch(error => console.log(error)) //# 10 error handling
+    //
