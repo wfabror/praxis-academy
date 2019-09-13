@@ -1,6 +1,6 @@
-const https = require('https');
+const axios = require('https');
 
-https.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY', (resp) => {
+axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY', (resp) => {
     let data = '';
 
     // A chunk of data has been recieved.
