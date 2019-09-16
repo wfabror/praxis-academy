@@ -9,7 +9,7 @@ function primitiveMultiply(a, b) {
 }
 
 function reliableMultiply(a, b) {
-    for (;;) {
+    for (;;) { //;; (titik koma dua kali digunakan sebagai action dalam javascript)
         try {
             return primitiveMultiply(a, b);
         } catch (e) {
