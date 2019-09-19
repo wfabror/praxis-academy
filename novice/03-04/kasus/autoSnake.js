@@ -83,23 +83,5 @@ $(function() {
     let $root = $('.container');
     createGrid($root);
     createSnake();
-    $('body').on('keypress', function(e) {
-        switch (e.keyCode) {
-            case 119:
-                if (iniatialVal[0] === 1 && iniatialVal[1] === 0) return;
-                return iniatialVal = [-1, 0];
-            case 115:
-                if (iniatialVal[0] === -1 && iniatialVal[1] === 0) return;
-                return iniatialVal = [1, 0];
-            case 97:
-                if (iniatialVal[0] === 0 && iniatialVal[1] === 1) return;
-                return iniatialVal = [0, -1];
-            case 100:
-                if (iniatialVal[0] === 0 && iniatialVal[1] === -1) return;
-                return iniatialVal = [0, 1];
-            default:
-                return;
-        }
-    });
-    setInterval(move, 250);
+    setInterval(move, 150);
 });
