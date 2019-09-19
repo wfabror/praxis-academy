@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Query S All</title>
+</head>
+
+<body>
+    <p>Paragraf ONe</p>
+    <p>Paragraf Two</p>
+    <div>div one</div>
+    <p>Paragraf three</p>
+    <div>div Two</div>
+</body>
+<script>
+    var paragraph = document.querySelectorAll('p');
+    for (var p of paragraph) {
+        p.style.color = 'green';
+    }
+</script>
+
+</html>
+<!-- yang berbeda dengan querySelector(), querySelectorAll mengambil semua tag yang ditandai -->

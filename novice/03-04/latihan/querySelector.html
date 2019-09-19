@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Query S</title>
+</head>
+
+<body>
+    <p>Paragraf ONe</p>
+    <p>Paragraf Two</p>
+    <div>div one</div>
+    <p>Paragraf three</p>
+    <div>div Two</div>
+    <!-- baris 16 ini tidak tereksekusi -->
+
+</body>
+<script>
+    var firstDiv = document.querySelector('div');
+    var secondDiv = document.querySelector('div');
+    firstDiv.style.color = 'red';
+    secondDiv.style.color = 'dark blue';
+</script>
+
+</html>
+<!-- Query Selector digunakan  untuk menangkap tag khusus agar dapat dimanipulasikan dengan CSS -->
+<!-- Hanya instance pertama yang akan dieksekusi -->

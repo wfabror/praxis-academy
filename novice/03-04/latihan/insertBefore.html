@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ins Before</title>
+</head>
+
+<body>
+    <div>
+        <strong>Sebuah kata-kata</strong>
+    </div>
+</body>
+<script>
+    var kata = document.createElement('em');
+    var strong = document.querySelector('strong');
+    var div = document.querySelector('div');
+    kata.textContent = 'Apakah kata itu? ';
+    div.insertBefore(kata, strong);
+</script>
+
+</html>
