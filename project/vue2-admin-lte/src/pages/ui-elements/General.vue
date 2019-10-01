@@ -12,7 +12,9 @@
         </row>
         <!-- /.row -->
         <row>
-          <va-color-palette-set v-for="color in colors[1]":color="color"></va-color-palette-set>
+          <va-color-palette-set v-for="color in colors[1]"
+            :color="color"
+          ></va-color-palette-set>
         </row>
         <!-- /.row -->
       </div>

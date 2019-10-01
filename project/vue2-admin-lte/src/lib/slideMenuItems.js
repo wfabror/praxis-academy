@@ -12,7 +12,7 @@ module.exports = [
       {
         type: 'item',
         icon: 'fa fa-circle-o',
-        name: 'Hello Screen',
+        name: '헬로화면',
         router: {
           name: 'Hello'
         }
@@ -20,7 +20,7 @@ module.exports = [
       {
         type: 'item',
         icon: 'fa fa-circle-o',
-        name: 'Sample Screen',
+        name: '샘플화면',
         router: {
           name: 'Sample'
         }

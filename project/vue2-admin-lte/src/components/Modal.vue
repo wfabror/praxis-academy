@@ -24,12 +24,12 @@
 export default {
   mounted () {
     this.$bus.$on('modal-open', (args) => {
-      // TODO: args need to verify that is correct
+      // TODO: args가 올바른지 확인해야함
       this.type = args.type
       this.title = args.title
       this.description = args.description
-      this.confirmText = args.confirmText || 'Save and Quit'
-      this.cancelText = args.cancelText || 'Quit'
+      this.confirmText = args.confirmText || '저장 후 닫기'
+      this.cancelText = args.cancelText || '닫기'
       this.confirmBeforeHook = args.confirmBefore
       this.confirmAfterHook = args.confirmAfter
       this.cancelBeforeHook = args.cancelBefore
