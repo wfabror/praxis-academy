@@ -11,7 +11,7 @@
     </div>
 </template>
 
-<style>
+<style> 
 
 .kotak{
     position: relative;
