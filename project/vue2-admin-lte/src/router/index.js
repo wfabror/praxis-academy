@@ -23,7 +23,7 @@ import Modals from 'pages/ui-elements/Modals.vue'
 import GeneralElements from 'pages/forms/GeneralElements.vue'
 import AdvancedElements from 'pages/forms/AdvancedElements.vue'
 
-Vue.use(Router) 
+Vue.use(Router)
 
 export default new Router({
   mode: 'history',
